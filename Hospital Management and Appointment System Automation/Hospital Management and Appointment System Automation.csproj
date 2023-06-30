@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0AB543F5-1346-4EC0-8AD2-4A6CF887BA17}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hospital_Management_and_Appointment_System_Automation</RootNamespace>
+    <AssemblyName>Hospital Management and Appointment System Automation</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>8960629_first aid kit_medical box_medical_medicine_hospital_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Duyurular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duyurular.Designer.cs">
+      <DependentUpon>Duyurular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBransPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBransPaneli.Designer.cs">
+      <DependentUpon>FrmBransPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoktorBilgiDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoktorBilgiDuzenle.Designer.cs">
+      <DependentUpon>FrmDoktorBilgiDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoktorDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoktorDetay.Designer.cs">
+      <DependentUpon>FrmDoktorDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBilgiDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBilgiDuzenle.Designer.cs">
+      <DependentUpon>FrmBilgiDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoktorGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoktorGiris.Designer.cs">
+      <DependentUpon>FrmDoktorGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoktorPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoktorPanel.Designer.cs">
+      <DependentUpon>FrmDoktorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDuyuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDuyuru.Designer.cs">
+      <DependentUpon>FrmDuyuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiris.Designer.cs">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHastaDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHastaDetay.Designer.cs">
+      <DependentUpon>FrmHastaDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProjeRandevu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProjeRandevu.Designer.cs">
+      <DependentUpon>FrmProjeRandevu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRandevular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRandevular.Designer.cs">
+      <DependentUpon>FrmRandevular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSekreter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSekreter.Designer.cs">
+      <DependentUpon>FrmSekreter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSekreterGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSekreterGiris.Designer.cs">
+      <DependentUpon>FrmSekreterGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHastaKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHastaKayit.Designer.cs">
+      <DependentUpon>FrmHastaKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaGirisFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaGirisFormu.Designer.cs">
+      <DependentUpon>HastaGirisFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalProjectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalProjectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlbaglantisi.cs" />
+    <EmbeddedResource Include="Duyurular.resx">
+      <DependentUpon>Duyurular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBilgiDuzenle.resx">
+      <DependentUpon>FrmBilgiDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBransPaneli.resx">
+      <DependentUpon>FrmBransPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoktorBilgiDuzenle.resx">
+      <DependentUpon>FrmDoktorBilgiDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoktorDetay.resx">
+      <DependentUpon>FrmDoktorDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoktorGiris.resx">
+      <DependentUpon>FrmDoktorGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoktorPanel.resx">
+      <DependentUpon>FrmDoktorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDuyuru.resx">
+      <DependentUpon>FrmDuyuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiris.resx">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHastaDetay.resx">
+      <DependentUpon>FrmHastaDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProjeRandevu.resx">
+      <DependentUpon>FrmProjeRandevu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRandevular.resx">
+      <DependentUpon>FrmRandevular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSekreter.resx">
+      <DependentUpon>FrmSekreter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSekreterGiris.resx">
+      <DependentUpon>FrmSekreterGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHastaKayit.resx">
+      <DependentUpon>FrmHastaKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaGirisFormu.resx">
+      <DependentUpon>HastaGirisFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="HospitalProjectDataSet.xsc">
+      <DependentUpon>HospitalProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HospitalProjectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HospitalProjectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HospitalProjectDataSet.xss">
+      <DependentUpon>HospitalProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="8960629_first aid kit_medical box_medical_medicine_hospital_icon.ico" />
+    <None Include="Resources\340.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
